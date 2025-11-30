@@ -1,3 +1,4 @@
+/* server code from last year :D */
 const express = require("express");
 const path = require("path");
 

@@ -12,7 +12,10 @@ const routes = {
   404: "/static/pages/404.html",
   "/": "/static/pages/home.html",
   "/about": "/static/pages/about.html",
+  "/events": "/static/pages/events.html",
+  "/achievements": "/static/pages/achievements.html",
   "/contact-us": "/static/pages/contact.html",
+  "/join": "/static/pages/join.html",
 };
 
 //function to handle changing the location => called everytime a navigation is made
