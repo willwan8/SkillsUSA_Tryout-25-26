@@ -6,25 +6,30 @@
   <meta name="description" content="Explore the vibrant world of Metea Valley SkillsUSA! Empowering students to lead, innovate, and achieve through excellence in technical and leadership skills.">
   <link rel="stylesheet" href="/static/css/main.css">
   <link rel="icon" type="image/x-icon" href="/static/images/favicon.ico">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
   <div id="root">
     <!-- nav bar -->
-    <header>
+    <header class="navbar">
+      <figure class="navbar__logo">
+        <img src="/static/images/logo.png" alt="Logo">
+      </figure>
       <nav>
-          <ul>
-            <li><a href="/" onclick="route()">Home</a></li>
-            <li><a href="/about" onclick="route()">About</a></li>
-            <li><a href="/achievements" onclick="route()">Achievements</a></li>
-            <li><a href="/contact-us" onclick="route()">Contact</a></li>
+        <ul class="navbar__links">
+          <li><a href="/" onclick="route()">Home</a></li>
+          <li><a href="/about" onclick="route()">About</a></li>
+          <li><a href="/achievements" onclick="route()">Achievements</a></li>
+          <li><a href="/contact-us" onclick="route()">Contact</a></li>
         </ul>
       </nav>
+      <a href="/join" class="navbar__join-button">Register Now</a>
     </header>
      <!-- display current page content -->
     <div id="current-page"></div>
+
+    <footer class="footer">
+
+    </footer>
   </div>
 
   <script src="/static/js/script.js"></script>

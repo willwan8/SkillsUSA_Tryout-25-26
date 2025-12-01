@@ -1,3 +1,7 @@
+/* UI/UX */
+
+
+
 /* ROUTING ( routing code is from last year :D ) */
 //function to handle default link behavior and changes in location
 const route = (event) => {
