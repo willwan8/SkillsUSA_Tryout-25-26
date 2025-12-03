@@ -1,0 +1,5 @@
+/* CSS FOR SPECIFIC HOME PAGE STYLES */
+
+.hero__with-background-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/static/images/home_hero-background.jpg);
+}

@@ -1,35 +1,4 @@
-/* GLOBAL */
-* {
-  
-}
-
-/* NAVBAR */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  top: 0;
-}
-
-.navbar__logo img {
-  width: auto;
-  height: 70px;
-}
-
-.navbar__links {
-  display: flex;
-  justify-content: space-around;
-  list-style-type: none;
-}
-
-.navbar__links li a {
-  color: black; 
-  /* so the underline doesn't appear */
-  text-decoration: none;
-}
-
-.navbar__links li a:visited {
-  /* so the link doesn't change color after users visit it */
-  color: black;
-}
+/* THE MASTER FILE (IMPORTS ALL CSS CODE INTO ONE FILE FOR INDEX.HTML) */
+@import "global.css";
+@import "components.css";
+@import "home.css";

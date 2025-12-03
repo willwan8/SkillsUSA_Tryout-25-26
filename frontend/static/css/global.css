@@ -1,0 +1,20 @@
+/* CONTAINS GLOBAL (BASE) STYLES */
+
+* {
+  background-color: #FEF9FF;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 98px;
+}
+
+h2 {
+  font-size: 64px;
+}
+
+p {
+  font-size: 20px;
+}
