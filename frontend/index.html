@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Explore the vibrant world of Metea Valley SkillsUSA! Empowering students to lead, innovate, and achieve through excellence in technical and leadership skills.">
   <link rel="stylesheet" href="/static/css/main.css">
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="/static/images/favicon.ico">
 </head>
 <body>
@@ -12,12 +14,12 @@
     <!-- nav bar -->
     <header class="navbar">
       <figure class="navbar__logo">
-        <img src="/static/images/logo.png" alt="Logo">
+        <a href="/" onclick="route()"><img src="/static/images/logo.png" alt="Logo"></a>
       </figure>
       <nav>
         <ul class="navbar__links">
-          <li><a href="/" onclick="route()">Home</a></li>
           <li><a href="/about" onclick="route()">About</a></li>
+          <li><a href="/events" onclick="route()">Events</a></li>
           <li><a href="/achievements" onclick="route()">Achievements</a></li>
           <li><a href="/contact-us" onclick="route()">Contact</a></li>
         </ul>
@@ -28,7 +30,43 @@
     <div id="current-page"></div>
 
     <footer class="footer">
+      <figure class="footer__logo">
+        <a href="/" onclick="route()"><img src="/static/images/logo.png" alt="Logo"></a>
+      </figure>
 
+      <div class="footer__content">
+        <h2 class="footer__subheading">Extra Info</h2>
+        <ul class="footer__list">
+          <li><a href="/join" onclick="route()" class="footer_link">Join info</a></li>
+          <li><a href="/events#state" onclick="route()" class="footer_link">State</a></li>
+          <li><a href="/events#nationals" onclick="route()" class="footer_link">Nationals</a></li>
+          <li><a href="/join" onclick="route()" class="footer_link">Commitment</a></li>
+        </ul>
+      </div>
+
+      <hr class="dividing-line dividing-line--vertical">
+        
+      <div class="footer__content">
+        <h2 class="footer__subheading">Navigation</h2>
+        <ul class="footer__list">
+          <li><a href="/about" onclick="route()" class="footer_link">About</a></li>
+          <li><a href="/events" onclick="route()" class="footer_link">Events</a></li>
+          <li><a href="/achievements" onclick="route()" class="footer_link">Achievements</a></li>
+          <li><a href="/contact-us" onclick="route()" class="footer_link">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__content">
+        <ul class="footer__list">
+          <h2 class="footer__subheading">Contact Us</h2>
+          <p class="footer__text">1801 N Eola Rd, Aurora, Il 60502</p>
+          <p class="footer__text">(630) 375-5900</p>
+          <p class="footer__text">nathan_wedam@ipsd.org</p>
+        </ul>
+      </div>
+      
+      <p class="footer__text">©2025 Metea Valley SkillsUSA Chapter. All rights reserved.</p>
+      <p class="footer_citation">Icons by Icons8</p>
     </footer>
   </div>
 

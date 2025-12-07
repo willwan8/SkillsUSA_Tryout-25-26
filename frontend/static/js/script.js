@@ -1,13 +1,20 @@
 /* UI/UX */
+// function for when we want an anchor to go to a specific spot on page
+const routeToElement = () => {
+  if (window.location.hash) {
+    const element = document.querySelector(window.location.hash); // grab the hash in the link for the element
+    if (element) {
+      element.scrollIntoView({behavior: "smooth", block: "center"}); // smoothly scroll to the desired element and to the center of screen
+    }
+  }
+}
 
-
-
-/* ROUTING ( routing code is from last year :D ) */
+/* ROUTING ( most of raw routing code is from last year, with minor additions :D ) */
 //function to handle default link behavior and changes in location
 const route = (event) => {
   event = event || window.event;  //captures the click event for the link
   event.preventDefault(); //prevents the anchor tag from performing its default behavior (navigating to href)
-  window.history.pushState({}, "", event.target.href); //updates url on browser using browser history API
+  window.history.pushState({}, "", event.target.closest("a").href); //updates url on browser using browser history API
   handleLocation();
 }
 
@@ -28,6 +35,9 @@ const handleLocation = async () => {
   const route = routes[path] || routes[404]; //uses pathname to get desired route or defaults to 404 if not found
   const html = await fetch(route).then((data => data.text())); //fetchs html from route and transforms it into text
   document.getElementById("current-page").innerHTML = html; //sets inner html in page container
+
+  // for footer links primarily, in particular to link to a specific element on a page
+  routeToElement();
 }
 
 window.onpopstate = handleLocation; //handles when users click forward and back buttons on browser

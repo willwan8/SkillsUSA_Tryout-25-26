@@ -7,10 +7,24 @@
   align-items: center;
   position: sticky;
   top: 0;
+  background: #1A1E23;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 500;
+}
+
+.navbar__logo {
+  margin-left: 10px;
 }
 
 .navbar__logo img {
   width: auto;
+  height: 70px;
+}
+
+/* so the navbar logo is clickable as a link to the home page */
+.navbar__logo a {
+  display: inline-block;
   height: 70px;
 }
 
@@ -20,14 +34,65 @@
   list-style-type: none;
 }
 
-.navbar__links li a {
-  color: black; 
-  font-size: 20px;
-  /* so the underline doesn't appear */
-  text-decoration: none;
+.navbar__links li {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-.navbar__links li a:visited {
-  /* so the link doesn't change color after users visit it */
-  color: black;
+.navbar__links li a {
+  color: #FEF9FF;
+  font-size: 20px;
+}
+
+.navbar__join-button {
+  color: #1A1E23;
+  margin-right: 10px;
+  background-color: #FFC95C;
+  border-radius: 32px;
+  padding: 10px 30px;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #1A1E23;
+  display: grid;
+  color: #FEF9FF;
+}
+
+/* COMPONENTS */
+.about {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.about--flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero__header--white {
+  color: #FEF9FF;
+}
+
+.hero__button {
+  background-color: #FFC95C;
+  border-radius: 32px;
+  padding: 10px 30px;
+}
+
+.about__info-box {
+  margin-top: 500px;
+}
+
+.dividing-line {
+  background-color: #1A1E23;
+  height: 4px;
 }

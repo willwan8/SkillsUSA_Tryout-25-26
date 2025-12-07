@@ -1,20 +1,42 @@
 /* CONTAINS GLOBAL (BASE) STYLES */
 
 * {
-  background-color: #FEF9FF;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #1A1E23;
+}
+
+body {
+  background-color: #FEF9FF;
 }
 
 h1 {
   font-size: 98px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
 }
 
 h2 {
   font-size: 64px;
+  font-family: 'Poppins', sans-serif;
 }
 
 p {
   font-size: 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+a {
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+.centered {
+  text-align: center;
 }
