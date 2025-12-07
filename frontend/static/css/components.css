@@ -1,6 +1,7 @@
 /* CONTAINS CSS FOR ALL USED COMPONENTS */
 
 /* NAVIGATION */
+/* in here cuz this is in all pages */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -8,13 +9,14 @@
   position: sticky;
   top: 0;
   background: #1A1E23;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: .6rem;
+  padding-bottom: .6rem;
   font-weight: 500;
+  z-index: 1000;
 }
 
 .navbar__logo {
-  margin-left: 10px;
+  margin-left: .6rem;
 }
 
 .navbar__logo img {
@@ -35,13 +37,13 @@
 }
 
 .navbar__links li {
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
 }
 
 .navbar__links li a {
   color: #FEF9FF;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .navbar__join-button {
@@ -49,26 +51,121 @@
   margin-right: 10px;
   background-color: #FFC95C;
   border-radius: 32px;
-  padding: 10px 30px;
+  padding: .6rem 1.8rem;
 }
 
 /* FOOTER */
+/* in here cuz this is in all pages */
 .footer {
-  background-color: #1A1E23;
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1.5fr .5fr;
+  padding: 3rem 4rem;
+  background-color: #1A1E23;
+}
+
+.footer__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__logo img {
+  width: auto;
+  height: 70px;
+}
+
+.footer__subheading {
+  margin-bottom: 1%;
+  font-size: 2rem;
+  color: #3B8EA5;
+}
+
+.footer__link {
+  color: #FEF9FF;
+  margin-bottom: 1%;
+}
+
+.footer__list {
+  list-style-type: none;
+}
+
+.footer__text {
+  color: #FEF9FF;
+}
+
+.footer__text {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer__citation {
+  font-size: 1rem;
   color: #FEF9FF;
 }
 
 /* COMPONENTS */
+/* we will classify components as any part that can be used in multiple pages (essentially not unique to a single page) */
 .about {
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 8%; /* padding due to vertical margins collapsing on diff sections */
+  padding-bottom: 4%;
+  flex-wrap: wrap;
 }
 
-.about--flex {
-  display: flex;
+.about__details {
+  width: 25%;
+  height: auto;
+  margin-right: 5rem;
+}
+
+.about__description {
+  margin-bottom: 2%;
+}
+
+.about__details p {
+  margin-bottom: 5%;
+}
+.about__header {
+  color: #3B8EA5;
+  margin-bottom: 2%;
+}
+
+.about__subheader {
+  color: #3B8EA5;
+  margin-bottom: 1%;
+}
+
+.about__header--large {
+  margin-bottom: 1%;
+}
+
+.about__img {
+  width: 55rem;
+  height: auto;
+  border-radius: 32px;
+  margin-left: 5rem;
+}
+
+.about--flex-column {
   flex-direction: column;
+}
+
+.about__info-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120rem;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 .hero {
@@ -76,23 +173,113 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding-top: 15%;
+  padding-bottom: 7%;
 }
 
-.hero__header--white {
-  color: #FEF9FF;
+.hero__header {
+  margin-bottom: 1%;
+}
+
+.hero__description {
+  margin-bottom: 1%;
 }
 
 .hero__button {
   background-color: #FFC95C;
   border-radius: 32px;
-  padding: 10px 30px;
-}
-
-.about__info-box {
-  margin-top: 500px;
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  font-weight: 500;
 }
 
 .dividing-line {
   background-color: #1A1E23;
   height: 4px;
+  width: 50%;
+}
+
+.curved-background-element {
+  position: relative;
+  background: #FFC95C;
+  height: 15rem;
+  overflow: hidden;
+}
+
+.curved-background-element::before {
+  content: "";
+  position: absolute;
+  top: -5rem;
+  left: 0;
+  width: 100%;
+  height: 15rem;
+  background: #FEF9FF;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.reasons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4%;
+  margin-bottom: 8%;
+}
+
+.reasons__header {
+  margin-bottom: 1%;
+}
+
+.reasons__box {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  width: 45%;
+}
+
+.reasons__subheading {
+  color: #3B8EA5;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+}
+
+.call-to-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8%;
+  flex-wrap: wrap;
+}
+
+.call-to-action__image {
+  margin-right: 5rem;
+}
+
+.call-to-action__img {
+  border-radius: 32px;
+  width: 40rem;
+  height: 40rem;
+}
+
+.call-to-action__info-box {
+  margin-left: 5rem;
+  width: 40rem;
+  height: 40rem;
+  box-shadow: 0 0 10px 10px rgba(59, 142, 165, .25);
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.call-to-action__info-box h2 {
+  margin-bottom: 1%;
+}
+
+.call-to-action__button {
+  background-color: #FFC95C;
+  border-radius: 32px;
+  font-weight: 500;
+  padding: .6rem 1.8rem;
 }

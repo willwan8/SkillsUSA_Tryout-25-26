@@ -1,0 +1,27 @@
+/* CSS FOR SPECIFIC EVENTS PAGE STYLES */
+
+.calendar iframe {
+  border-width: 0;
+  width: 80rem;
+  height: 60rem;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.calendar__calendar {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.about__img--smaller {
+  width: 35rem;
+  height: 35rem;
+  margin-right: 10rem;
+  margin-left: 0;
+}
+
+.dividing-line--with-margin {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}

@@ -7,28 +7,37 @@
   color: #1A1E23;
 }
 
+html {
+  font-size: 16px; /* for rem */
+}
+
 body {
   background-color: #FEF9FF;
 }
 
 h1 {
-  font-size: 98px;
+  font-size: 6rem;
   font-weight: 500;
   font-family: 'Poppins', sans-serif;
 }
 
 h2 {
-  font-size: 64px;
+  font-size: 4rem;
+  font-weight: 500;
   font-family: 'Poppins', sans-serif;
 }
 
+h3 {
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+}
 p {
-  font-size: 20px;
+  font-size: 2rem;
   font-family: 'Inter', sans-serif;
 }
 
 a {
-  display: flex;
   font-family: 'Poppins', sans-serif;
   text-decoration: none;
 }

@@ -1,4 +1,40 @@
 /* UI/UX */
+// achievements carousel stuff
+let slideIndex = 1;
+
+
+// Next/previous controls
+function plusSlides(n) {
+  slideIndex += n;
+  showSlides(slideIndex);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  slideIndex = n;
+  showSlides(slideIndex);
+}
+
+const showSlides = (n) => {
+  let i;
+  let slides = document.getElementsByClassName("gallery__slide");
+  let dots = document.getElementsByClassName("gallery__dot");
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
 // function for when we want an anchor to go to a specific spot on page
 const routeToElement = () => {
   if (window.location.hash) {
@@ -6,6 +42,8 @@ const routeToElement = () => {
     if (element) {
       element.scrollIntoView({behavior: "smooth", block: "center"}); // smoothly scroll to the desired element and to the center of screen
     }
+  } else { // in the case that this is just a regular route, we'll automatically go to the hero section
+    document.querySelector(".hero").scrollIntoView({behavior: "smooth", block: "center"});
   }
 }
 
@@ -38,6 +76,11 @@ const handleLocation = async () => {
 
   // for footer links primarily, in particular to link to a specific element on a page
   routeToElement();
+  
+  // for achievements page
+  if (window.location.pathname == "/achievements") {
+  showSlides(slideIndex);
+  }
 }
 
 window.onpopstate = handleLocation; //handles when users click forward and back buttons on browser

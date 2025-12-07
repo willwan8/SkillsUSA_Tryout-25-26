@@ -1,0 +1,111 @@
+/* CSS FOR SPECIFIC ACHIEVEMENT PAGE STYLES */
+
+/* ABOUT */
+.about__details--extended {
+  width: 50%;
+}
+
+/* GALLERY */
+.gallery__header {
+  margin-bottom: 1%;
+}
+
+.gallery__description {
+  margin-bottom: 1%;
+}
+
+.gallery__carousel {
+  max-width: 90rem;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* hide images by default*/
+.gallery__slide {
+  display: none;
+}
+
+.gallery__prev-button, .gallery__next-button {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -1.5rem;
+  padding: 1rem;
+  color: #FEF9FF;
+  font-weight: bold;
+  font-size: 1.5rem;
+  transition: 0.6s ease;
+  border-radius: 0 4px 4px 0;
+  user-select: none;
+}
+
+/* position gallery next button to the right */
+.gallery__next-button {
+  right: 0;
+  border-radius: 4px 0 0 4px;
+}
+
+.gallery__prev-button:hover, .gallery__next-button:hover {
+  background-color: rgba(45,45,42,0.5);
+}
+
+.gallery__text {
+  color: #FEF9FF;
+  background-color: rgba(45,45,42,0.5);;
+  border-radius: 32px;
+  font-size: 1rem;
+  padding: .5rem .75rem;
+  position: absolute;
+  bottom: .5rem;
+  width: 100%;
+  text-align: center;
+}
+
+.gallery__image {
+  width: 100%;
+  max-height: 50rem;
+  object-fit: cover;
+  display: block;
+  border-radius: 32px;
+}
+
+.gallery__number {
+  color: #FEF9FF;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  position: absolute;
+  top: 0;
+}
+
+.gallery__dots {
+  margin-bottom: 2%;
+}
+
+.gallery__dot {
+  cursor: pointer;
+  height: 1rem;
+  width: 1rem;
+  margin: 0, .2rem;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: rgba(59, 142, 165, .75);
+}
+
+.gallery--fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
