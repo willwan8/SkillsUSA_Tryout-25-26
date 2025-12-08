@@ -1,5 +1,21 @@
 /* UI/UX */
 
+// sending an alert after the user submits the interest form
+const submitButtonClicked = () => {
+    // grabbing values
+    const name = document.getElementById('name').value.trim(); // trim removes empty spaces, so empty responses are counted as empty or null
+    const email = document.getElementById('email').value.trim();
+    const grade = document.querySelector(".submission-form__dropdown") ? document.querySelector(".submission-form__dropdown").value : '';
+    const interest = document.getElementById('why').value.trim();
+
+    // if any value is empty then don't do non
+    if (!name || !email || !grade || !interest) {
+      return;
+    }
+    
+    alert(`Thanks for filling out the form! You entered:\nName: ${name}\nEmail: ${email}\nGrade: ${grade}\nWhy you're interested: ${interest}`);
+}
+
 // hamburger for smaller mobile screens
 const hamMenu = document.querySelector('.navbar--toggled');
 const offScreenMenu = document.querySelector('.navbar__offscreen-menu')
