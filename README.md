@@ -5,3 +5,7 @@
 npm install
 
 **Then type** "node server.js" **in the console and visit** http://localhost:8000/
+
+**Or use this nifty link on render :D (it will take a bit to laod up, but it works well!)**
+
+https://skillsusa-tryout-25-26.onrender.com
