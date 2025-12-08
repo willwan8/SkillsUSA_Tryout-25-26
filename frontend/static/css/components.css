@@ -283,3 +283,15 @@
   font-weight: 500;
   padding: .6rem 1.8rem;
 }
+
+.submission-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.submission-form__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

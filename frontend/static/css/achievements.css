@@ -2,7 +2,7 @@
 
 /* ABOUT */
 .about__details--extended {
-  width: 50%;
+  max-width: 50%;
 }
 
 /* GALLERY */
@@ -88,7 +88,7 @@
 .gallery__dot {
   cursor: pointer;
   height: 1rem;
-  width: 1rem;
+  max-width: 1rem;
   margin: 0, .2rem;
   background-color: #bbb;
   border-radius: 50%;

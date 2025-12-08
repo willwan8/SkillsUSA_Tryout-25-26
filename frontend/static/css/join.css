@@ -1,1 +1,59 @@
 /* CSS FOR SPECIFIC JOIN PAGE STYLES */
+
+.submission-form--yellow {
+  background-color: #FFC95C;
+}
+
+.submission-form__form--flex-column {
+  flex-direction: column;
+}
+
+.submission-form__form--background-true {
+  background-color: #FEF9FF;
+}
+
+.submission-form__form--smaller {
+  width: 30rem;
+  height: auto;
+  border-radius: 32px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.submission-form__text-field {
+  font-family: 'Inter', sans-serif;
+  padding: 1rem;
+  border-radius: 32px;
+  border-width: 0;
+  margin-bottom: 5%;
+}
+
+.submission-form__label {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: #1A1E23;
+  margin-bottom: 2%;
+}
+
+.submission-form__label--increased-margin {
+  font-family: 'Poppins', sans-serif;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.submission-form__dropdown {
+  font-family: 'Inter', sans-serif;
+  border-radius: 32px;
+}
+
+.submission-form__button {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  padding: 1rem 2rem;
+  background-color: #FFC95C;
+  color: #1A1E23;
+  border-radius: 32px;
+  border-width: 0;
+}

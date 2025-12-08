@@ -7,6 +7,74 @@
     <title>Join - MV SkillsUSA</title>
 </head>
 <body>
-  
+  <section class="hero">
+    <h1 class="hero__header">Your Journey Starts Here.</h1>
+  </section>
+
+  <div class="curved-background-element"></div>
+
+  <section class="submission-form submission-form--yellow">
+    <h2 class="submission-form__header centered">Interest Form</h2>
+    <p class="submission-form__description centered">Want to join SkillsUSA? Fill out this interest form, and we'll get back to you!</p>
+
+    <form class="submission-form__form submission-form__form--smaller submission-form__form--background-true submission-form__form--flex-column">
+      <label class="submission-form__label" for="name">Your name</label>  
+      <input id="name" class="submission-form__text-field" type="text" placeholder="Name" required>
+      <label class="submission-form__label" for="email">Your email</label>  
+      <input id="email" class="submission-form__text-field" type="email" placeholder="Email" required>
+        
+      <label class="submission-form__label submission-form__label--increased-margin">
+          What is your grade level?
+          <select class="submission-form__dropdown"name="grade" required>
+              <option value="">Choose...</option>
+              <option value="freshman">Freshman</option>
+              <option value="sophomore">Sophomore</option>
+              <option value="junior">Junior</option>
+              <option value="senior">Senior</option>
+          </select>
+      </label>
+
+      <label class="submission-form__label" for="why">Why are you interested in SkillsUSA?</label>
+      <input id="why" class="submission-form__text-field" type="text" placeholder="Type here..." required>
+      <input class="submission-form__button" type="submit" value="Submit">
+
+    </form>
+  </section>
+
+  <section class="about about--flex-column">
+    <h2 class="about__header--large centered">Why join?</h2>
+    <div class="about__details about__details--extended centered">   
+        <p class="about__description centered">
+            As a member, you’ll gain real-world experience through competitions, projects, and workshops. 
+            You’ll work alongside motivated students, develop leadership skills, and receive mentorship that prepares you for college and careers. 
+            No matter your background, you belong here.
+        </p>
+    </div> 
+    
+  </section>
+
+  <section id="join-info" class="reasons">
+    <h2 class="reasons__header centered">Information to know</h2>
+    
+    <hr class="dividing-line">
+    <div class="reasons__box">
+      <p class="reasons__subheading">Cost</p>
+      <p>The membership fee for SkillsUSA is $225 for the Metea Valley Chapter, but only after you're a part of the state team. The fee includes the cost to go to state.</p>
+    </div>
+
+    <hr class="dividing-line">
+    <div class="reasons__box">
+      <p id="commitment" class="reasons__subheading">Commitment</p>
+      <p>There are meetings for different clusters every week. These meetings are around an hour. Depending on your event, you will need to do various levels of preparation before competitions.</p>
+    </div>
+
+    <hr class="dividing-line">
+    <div class="reasons__box">
+      <p class="reasons__subheading">Events</p>
+      <p>We offer a wide variety of events, which vary in clusters. There are events in engineering, computer science, healthcare, business, and other sectors as well. SkillsUSA offers over 110 events!</p>
+    </div>
+    <hr class="dividing-line">
+  </section>
+
 </body>
 </html>

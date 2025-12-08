@@ -5,12 +5,6 @@
   margin-right: 1rem;
 }
 
-.submission-form__form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .submission-form iframe {
    width: 45rem;
   height: 55rem;

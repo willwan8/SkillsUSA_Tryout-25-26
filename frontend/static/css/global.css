@@ -49,3 +49,17 @@ a:visited {
 .centered {
   text-align: center;
 }
+
+/* For larger mobile devices*/
+@media (max-width: 768px) {
+ html {
+  font-size: 15px;
+ } 
+}
+
+/* For small phones */
+@media (max-width: 480px) {
+ html {
+  font-size: 14px;
+ } 
+}
