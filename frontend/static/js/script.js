@@ -1,15 +1,31 @@
 /* UI/UX */
+
+// hamburger for smaller mobile screens
+const hamMenu = document.querySelector('.navbar--toggled');
+const offScreenMenu = document.querySelector('.navbar__offscreen-menu')
+
+hamMenu.addEventListener('click', () => {
+  hamMenu.classList.toggle('active');
+  offScreenMenu.classList.toggle('active');
+})
+
+const closeHamburger = () => {
+  if (hamMenu && offScreenMenu) {
+    hamMenu.classList.remove('active');
+    offScreenMenu.classList.remove('active');
+  }
+}
+
 // achievements carousel stuff
 let slideIndex = 1;
 
-
-// Next/previous controls
+// next/previous controls
 function plusSlides(n) {
   slideIndex += n;
   showSlides(slideIndex);
 }
 
-// Thumbnail image controls
+// thumbnail image controls
 function currentSlide(n) {
   slideIndex = n;
   showSlides(slideIndex);
@@ -77,6 +93,9 @@ const handleLocation = async () => {
   // for footer links primarily, in particular to link to a specific element on a page
   routeToElement();
   
+  // for hamburger menu
+  closeHamburger();
+
   // for achievements page
   if (window.location.pathname == "/achievements") {
   showSlides(slideIndex);

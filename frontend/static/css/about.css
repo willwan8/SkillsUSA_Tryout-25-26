@@ -1,6 +1,31 @@
 /* CSS FOR SPECIFIC ABOUT PAGE STYLES */
 
 .call-to-action__info-box--extended {
-  width: 80rem;
-  height: 30rem;
+  max-width: 80rem;
+  max-height: 30rem;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 480px) {
+  .call-to-action__info-box--extended {
+    max-width: 95%;
+    max-height: 20rem;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .call-to-action__info-box--extended {
+    max-width: 80%;
+    max-height: 25rem;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .call-to-action__info-box--extended {
+    max-width: 60rem;
+    max-height: 28rem;
+    margin: 0 auto;
+  }
 }

@@ -77,3 +77,54 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+/* MEDIA QUERIES */
+@media (max-width: 1200px) {
+  .hero--with-background-image {
+    height: 80vh; /* scales with screen */
+  }
+}
+
+@media (max-width: 768px) {
+  .hero--with-background-image {
+    height: 60vh;
+    background-position: center top;
+  }
+}
+
+@media (max-width: 768px) {
+  .achievements__info-box {
+    max-width: 16rem;
+    height: 22rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .achievements__info-box {
+    max-width: 90%;
+    height: auto;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .achievements__header {
+    margin-bottom: 5%;
+  }
+
+  .achievements__subheading {
+    margin-bottom: 5%;
+  }
+}
+
+@media (max-width: 480px) {
+  .achievements__info-box h1 {
+    font-size: 1.5rem;
+  }
+
+  .achievements__info-box p {
+    font-size: 0.9rem;
+  }
+}

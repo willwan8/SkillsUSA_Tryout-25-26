@@ -9,6 +9,8 @@
 
 html {
   font-size: 16px; /* for rem */
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 body {

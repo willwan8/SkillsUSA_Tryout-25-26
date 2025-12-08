@@ -16,15 +16,31 @@
       <figure class="navbar__logo">
         <a href="/" onclick="route()"><img src="/static/images/logo.png" alt="Logo"></a>
       </figure>
-      <nav>
-        <ul class="navbar__links">
+      
+      <div class="navbar__offscreen-menu">
+        <ul>
           <li><a href="/about" onclick="route()">About</a></li>
           <li><a href="/events" onclick="route()">Events</a></li>
           <li><a href="/achievements" onclick="route()">Achievements</a></li>
           <li><a href="/contact-us" onclick="route()">Contact</a></li>
+          <li><a href="/join" onclick="route()">Join</a></li>
+        </ul>
+      </div>
+      <button class="navbar--toggled">
+        <span class="navbar__hamburger"></span>
+        <span class="navbar__hamburger"></span>
+        <span class="navbar__hamburger"></span>
+      </button>
+
+      <nav class="navbar__menu">
+        <ul class="navbar__links">
+          <li><a href="/about" onclick="route()" class="link-animated">About</a></li>
+          <li><a href="/events" onclick="route()" class="link-animated">Events</a></li>
+          <li><a href="/achievements" onclick="route()" class="link-animated">Achievements</a></li>
+          <li><a href="/contact-us" onclick="route()" class="link-animated">Contact</a></li>
         </ul>
       </nav>
-      <a href="/join" class="navbar__join-button">Register Now</a>
+      <a href="/join" class="navbar__join-button button-animated">Register Now</a>
     </header>
      <!-- display current page content -->
     <div id="current-page"></div>
@@ -36,20 +52,20 @@
           <div class="footer__item">
             <h3 class="footer__subheading">Extra Info</h2>
             <ul class="footer__list">
-              <li><a href="/join#join-info" onclick="route()" class="footer__link">Join info</a></li>
-              <li><a href="/events#state" onclick="route()" class="footer__link">State</a></li>
-              <li><a href="/events#nationals" onclick="route()" class="footer__link">Nationals</a></li>
-              <li><a href="/join#commitment" onclick="route()" class="footer__link">Commitment</a></li>
+              <li><a href="/join#join-info" onclick="route()" class="footer__link link-animated">Join info</a></li>
+              <li><a href="/events#state" onclick="route()" class="footer__link link-animated">State</a></li>
+              <li><a href="/events#nationals" onclick="route()" class="footer__link link-animated">Nationals</a></li>
+              <li><a href="/join#commitment" onclick="route()" class="footer__link link-animated">Commitment</a></li>
             </ul>
           </div>
             
           <div class="footer__item">
             <h3 class="footer__subheading">Navigation</h2>
             <ul class="footer__list">
-              <li><a href="/about" onclick="route()" class="footer__link">About</a></li>
-              <li><a href="/events" onclick="route()" class="footer__link">Events</a></li>
-              <li><a href="/achievements" onclick="route()" class="footer__link">Achievements</a></li>
-              <li><a href="/contact-us" onclick="route()" class="footer__link">Contact</a></li>
+              <li><a href="/about" onclick="route()" class="footer__link link-animated">About</a></li>
+              <li><a href="/events" onclick="route()" class="footer__link link-animated">Events</a></li>
+              <li><a href="/achievements" onclick="route()" class="footer__link link-animated">Achievements</a></li>
+              <li><a href="/contact-us" onclick="route()" class="footer__link link-animated">Contact</a></li>
             </ul>
           </div>
 
